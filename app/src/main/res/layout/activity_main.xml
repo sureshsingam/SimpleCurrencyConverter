@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jayamsuresh.simplecurrencyconverter.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:id="@+id/CurrencyConverterText"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14pt"
+        android:textIsSelectable="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/button"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14pt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/inputAmount"
+        android:text="Enter Currency Amount Here"
+        android:layout_below="@+id/CurrencyConverterText"
+        android:layout_marginTop="66dp"
+        android:layout_alignRight="@+id/CurrencyConverterText"
+        android:layout_alignEnd="@+id/CurrencyConverterText"
+        android:layout_alignLeft="@+id/CurrencyConverterText"
+        android:layout_alignStart="@+id/CurrencyConverterText"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ResultOfConversion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Result"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/fromCurrency"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/ToCurrency"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/ToCurrency"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/ToCountryLabel"
+        android:layout_toEndOf="@+id/ToCountryLabel" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="From Country Code"
+        android:id="@+id/fromCountryLabel"
+        android:paddingBottom="10dp"
+        android:layout_alignBottom="@+id/fromCurrency"
+        android:layout_marginBottom="10dp"
+         android:layout_toStartOf="@+id/fromCurrency" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="To Country Code"
+        android:id="@+id/ToCountryLabel"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/button"
+        android:layout_toLeftOf="@+id/fromCurrency"
+        android:layout_toStartOf="@+id/fromCurrency" />
+
+
+</RelativeLayout>

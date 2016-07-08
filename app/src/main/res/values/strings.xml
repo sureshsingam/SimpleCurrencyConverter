@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simple Currency Converter</string>
+    <string name="currency_converter_text">Currency Converter Text</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="convert">Convert</string>
+    <string name="enter_currency_value_here">Enter Currency Value here</string>
+</resources>
