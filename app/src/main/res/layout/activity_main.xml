@@ -26,7 +26,7 @@
         android:text="Convert"
         android:id="@+id/button"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="14pt"
+        android:textSize="30sp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="120dp" />
@@ -35,14 +35,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:ems="10"
         android:id="@+id/inputAmount"
         android:text="Enter Currency Amount Here"
         android:layout_below="@+id/CurrencyConverterText"
         android:layout_marginTop="66dp"
-        android:layout_alignRight="@+id/CurrencyConverterText"
         android:layout_alignEnd="@+id/CurrencyConverterText"
-        android:layout_alignLeft="@+id/CurrencyConverterText"
         android:layout_alignStart="@+id/CurrencyConverterText"
         />
 
@@ -81,7 +78,6 @@
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/ToCountryLabel"
-        android:layout_toEndOf="@+id/ToCountryLabel"
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
@@ -92,10 +88,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="From Country Code"
         android:id="@+id/fromCountryLabel"
-        android:paddingBottom="10dp"
         android:layout_alignBottom="@+id/fromCurrency"
-        android:layout_marginBottom="10dp"
-         android:layout_toStartOf="@+id/fromCurrency" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,10 +100,12 @@
         android:text="To Country Code"
         android:id="@+id/ToCountryLabel"
         android:paddingBottom="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
         android:layout_above="@+id/button"
-        android:layout_toLeftOf="@+id/fromCurrency"
-        android:layout_toStartOf="@+id/fromCurrency" />
+        android:layout_below="@+id/fromCountryLabel"
+        android:layout_alignParentLeft="true"
+        />
 
 
 </RelativeLayout>
+
